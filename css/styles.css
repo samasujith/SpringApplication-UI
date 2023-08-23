@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://img.freepik.com/premium-photo/abstract-white-background-with-squares_476363-1050.jpg?size=626&ext=jpg&ga=GA1.2.1301328013.1692343675&semt=sph");
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    background-size: cover;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 0.5cm;
+
+}
+
+.employee h1 {
+    width: 100%;
+}
+
+label {
+    color: rgb(39, 32, 32);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 18%;
+}
+
+.employee label {
+    width: 50%;
+}
+
+.employee input {
+    display: block;
+    width: 50%;
+    height: 25px;
+    margin: 5px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border-radius: 0.1cm;
+    border: 2px solid silver;
+}
+
+h1 {
+    color: rgb(225, 130, 130);
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    width: 100%;
+    color: rgb(103, 103, 199);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.address-header,
+.course-header {
+    margin-top: 10px;
+}
+
+.required {
+    color: red;
+}
+
+input[type="submit"],
+input[type="button"] {
+    text-align: center;
+    height: 30px;
+    width: 15%;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    background-color: rgb(112, 233, 112);
+    border: 2px solid rgb(112, 233, 112);
+    opacity: 1;
+    color: rgb(5, 51, 77);
+    border-radius: 0.2cm;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: rgb(216, 87, 87);
+    color: white;
+    border: 0;
+    box-shadow: 2px 3px 4px 5px rgb(246, 154, 154);
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inner-container {
+    min-width: 400px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(112, 111, 109);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+table {
+    background-color: white;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid silver;
+}
+
+.result {
+    color: rgb(137, 137, 231);
+    border-bottom: 1px solid rgb(230, 158, 158);
+}

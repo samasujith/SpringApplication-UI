@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CreateEmployee</title>
+        <link href="/css/styles.css" rel="stylesheet">
+        <script src="/js/CreateEmployee.js"></script>
+        <style>
+                #add-course {
+                        display: inline-block;
+                        background-color: rgb(157, 197, 243);
+                        color: rgb(248, 244, 244);
+                        font-size: 18px;
+                        min-height: 28px;
+                        min-width: 150px;
+                        width: max-content;
+                        height: 50%;
+                        border: 2px solid rgb(157, 197, 243) ;
+                        border-radius: 0.2cm;
+                        margin-left: 5px;
+               
+                }
+                #add-course:hover{
+                        color: white;
+                        background-color: rgb(165, 112, 112);
+                        border: 0px;
+                       box-shadow: 2px 3px silver;
+                }
+
+        </style>
+</head>
+
+<body>
+        <h1>Add New Employee</h1>
+        <div class="container">
+                <form method="post" target="_blank" action="http://localhost:8080/api/employee">
+                        <section class="employee">
+                                <h2>Enter Employee details</h2>
+                                <label for="first_name">First Name<span class="required"> *</span> <input type="text"
+                                                id="first_name" name="firstName" class="personal-details" required></label>
+                                <label for="last_name">Last Name <input type="text" id="last_name" name="lastName"
+                                                class="personal-details"></label>
+                                <label for="salary">Salary <span class="required"> *</span><input type="number"
+                                                id="salary" name="salary" class="personal-details" required></label>
+                                <label for="department">Department <span class="required"> *</span><input type="text"
+                                                id="department" name="department" class="personal-details" required></label>
+                                <label for="experience">Experience <span class="required"> *</span><input type="number"
+                                                id="experience" name="experience" class="personal-details" required></label>
+                        </section>
+                        <section class="employee">
+                                <h2 class="address-header">Enter Employee Address</h2>
+                                <label for="street">Street <span class="required"> *</span><input type="text"
+                                                id="street" name="street" class="personal-details" required></label>
+                                <label for="city">City <span class="required"> *</span><input type="text" id="city"
+                                                name="city" class="personal-details" required></label>
+                                <label for="pin">Pin <span class="required"> *</span><input type="number" id="pin"
+                                                name="pin" class="personal-details" required></label>
+                        </section>
+                        <section class="employee" id="course">
+                                <h2 class="course-header">Enter Employee Courses <label for="add-course"><input
+                                                        class="add-course" type="button" id="add-course"
+                                                        value="Add Course" onclick="addCourse()"></label></h2>
+                                <label for="course1"> Course Name <input type="text" id="course1" name="course"
+                                                class="personal-details"></label>
+
+                        </section>
+
+                        <input type="submit" value="submit">
+                </form>
+        </div>
+</body>
+
+</html>
